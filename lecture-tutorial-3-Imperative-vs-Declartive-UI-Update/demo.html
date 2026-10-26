@@ -1,0 +1,25 @@
+<!-- Imperative Approach -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+</head>
+<body>
+    <h1 id="count">0</h1>
+    <button id="increment">Increment</button>
+
+    <script>
+        const countElement = document.getElementById('count');
+        const incrementButton = document.getElementById('increment');
+
+        let count = 0;
+
+        incrementButton.addEventListener('click', () => {
+            count++;
+            countElement.textContent = count;
+        });
+    </script>
+</body>
+</html>
